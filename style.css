@@ -1,0 +1,77 @@
+body{ 
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 2px;
+    overflow: hidden;
+    background:rgb(0, 0, 0);
+  }
+  .queshen{
+    color: #fff;
+  }
+  canvas {display:none}
+
+  .button-box{
+    display: flex ;
+    justify-content: space-around;
+  }
+  .yes:hover{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+  }
+  .no{
+    border: 2px black solid;
+  }
+  .no:hover{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+  }
+  .container-compliment{
+    display: none;
+
+  }
+  
+  .typewriter{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 50vh;
+  }
+  
+  .typewriter p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow:  0 0 10px #fff;
+  }
+
+  button{
+    padding: 12px 30px;
+    text-transform: uppercase;
+    border-radius: 0;
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  button:disabled,
+  button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+  
+  span{
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker{
+    50%{opacity: 0;}
+  }
+  
+  @media(max-width:1280px){
+    .container{width: 95%;}
+  }
+  
+  @media(max-width:480px){
+    #typewriter p{font-size: 1rem;}
+  }
