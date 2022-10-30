@@ -19,7 +19,7 @@ body{
     color: rgb(0, 0, 0);
   }
   .no{
-    border: 2px black solid;
+    border: 3px black solid;
   }
   .no:hover{
     background-color: #fff;
